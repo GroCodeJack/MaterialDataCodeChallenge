@@ -1,0 +1,10 @@
+/* TODO: make input textarea background light grey */
+input, textarea {
+    background-color: #616161;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: whitesmoke;
+    opacity: 1; /* Firefox */
+  }
+  

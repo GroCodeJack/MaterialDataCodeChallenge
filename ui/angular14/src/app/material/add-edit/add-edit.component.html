@@ -1,0 +1,40 @@
+<!--Form for adding/updating materials -->
+<div class="form-group row">
+    <label class="col-md-2 col-form-label"><b>Manufacturer:</b></label>
+    <div class="col-sm-10 pl-5 px-1 py-1">
+        <input type="text" class="form-control" [(ngModel)]="Mfr" />
+    </div>
+    <label class="col-sm-2 col-form-label"><b>Type Name:</b></label>
+    <div class="col-sm-10 pl-5 px-1 py-1">
+        <input type="text" class="form-control" [(ngModel)]="TypeName" />
+    </div>
+    <label class="col-sm-2 col-form-label"><b>Type Id:</b></label>
+    <div class="col-sm-10 pl-5 px-1 py-1">
+        <input type="number" class="form-control" [(ngModel)]="TypeId" />
+    </div>
+    <label class="col-sm-2 col-form-label"><b>Style Name:</b></label>
+    <div class="col-sm-10 pl-5 px-1 py-1">
+        <input type="text" class="form-control" [(ngModel)]="StyleName" />
+    </div>
+    <label class="col-sm-2 col-form-label"><b>Style Id:</b></label>
+    <div class="col-sm-10 pl-5 px-1 py-1">
+        <input type="text" class="form-control" [(ngModel)]="StyleId" />
+    </div>
+    <label class="col-sm-2 col-form-label"><b>Color Value:</b></label>
+    <div class="col-sm-10 pl-5 px-1 py-1">
+        <input type="number" class="form-control" [(ngModel)]="ColorValue" />
+    </div>
+    <label class="col-sm-2 col-form-label"><b>Color Name:</b></label>
+    <div class="col-sm-10 pl-5 px-1 py-1">
+        <input type="text" class="form-control" [(ngModel)]="ColorName" />
+    </div>
+    <label class="col-sm-2 col-form-label"><b>Size:</b></label>
+    <div class="col-sm-10 pl-5 px-1 py-1">
+        <input type="text" class="form-control" [(ngModel)]="Size" />
+    </div>
+</div>
+
+<!-- "rowId" variable is set to zero in "addClick()" function, but will possess a non-zero integer if clicking edit.
+    the logic *ngIf="mat.rowId==0" or !=0 dictates whether add or update button will appear at the bottom of form-->
+<button (click)="addMaterial()" style="color: whitesmoke; background-color: #004a82;" *ngIf="mat.rowId==0" class="btn btn-primary">Add</button>
+<button (click)="updateMaterial()" style="color: whitesmoke; background-color: #004a82;" *ngIf="mat.rowId!=0" class="btn btn-primary">Update</button>
