@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IEMaterialDataDB-Web.config Connection String" description="IEMaterialDataDB Connection String used in web.config by the application to access the database." defaultValue="Data Source=my-sql-server-jg.database.windows.net;Initial Catalog=FirstAzureDB;Integrated Security=false;User Id=jgrothaus;Password=jfasqlDB7132022!" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\jackg\\OneDrive\\Desktop\\IECodeTest\\api\\WebAppIETest\\WebAppIETest\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='IEMaterialDataDB']/@connectionString" />
+  </parameter>
+</parameters>
